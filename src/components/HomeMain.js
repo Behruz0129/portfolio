@@ -5,7 +5,7 @@ const HomeMain = () => {
     <main>
       <div className='descr'>
         <p>Make your website with me</p>
-        <div className='title'>
+        <div className='main-title'>
           <div className='hide'>
             <h2>
               The <span>Billion</span>

@@ -1,11 +1,13 @@
 import HomeAbout from '../components/HomeAbout';
 import HomeMain from '../components/HomeMain';
+import HomeProjects from '../components/HomeProjects';
 
-const Home = () => {
+const Home = ({ dataP }) => {
   return (
     <>
       <HomeMain />
       <HomeAbout />
+      <HomeProjects dataP={dataP} />
     </>
   );
 };

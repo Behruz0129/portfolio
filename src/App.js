@@ -1,10 +1,13 @@
 //Import Pages
 import Home from './pages/Home';
+//data
+import dataProject from './dataProjects';
 
 function App() {
+  const dataP = dataProject();
   return (
     <div className='App'>
-      <Home />
+      <Home dataP={dataP} />
     </div>
   );
 }
