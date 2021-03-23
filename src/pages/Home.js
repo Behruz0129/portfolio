@@ -1,6 +1,7 @@
-import HomeAbout from '../components/HomeAbout';
 import HomeMain from '../components/HomeMain';
+import HomeAbout from '../components/HomeAbout';
 import HomeProjects from '../components/HomeProjects';
+import HomeCourses from '../components/HomeCourses';
 
 const Home = ({ dataP }) => {
   return (
@@ -8,6 +9,7 @@ const Home = ({ dataP }) => {
       <HomeMain />
       <HomeAbout />
       <HomeProjects dataP={dataP} />
+      <HomeCourses />
     </>
   );
 };
