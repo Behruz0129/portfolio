@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import homeMainBg from './images/home-main-bg.png';
+import dotGridBg from './images/dot-grid.png';
 
 //Styled components
 export const MainSection = styled.div`
@@ -173,5 +174,82 @@ export const AboutSection = styled.div`
     z-index: -2;
     top: 0;
     left: 0;
+  }
+`;
+
+export const ProjectsSection = styled.div`
+  min-height: 70vh;
+  padding: 4rem;
+  background: url(${dotGridBg});
+  position: relative;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    color: #083042;
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  .slider {
+    min-height: 400px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .slick-prev {
+    display: none;
+  }
+  .slick-next {
+    display: none;
+  }
+`;
+
+export const CardElement = styled.div`
+  min-height: 450px;
+  width: 90%;
+  border: 3px solid #083042;
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #083042;
+  }
+  .descr {
+    padding: 1rem;
+    background: #4aff9b;
+    min-height: 244px;
+    .title {
+      font-size: 2rem;
+      color: #083042;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #083042;
+      margin-bottom: 30px;
+      &:nth-child(3) {
+        color: #024eff;
+        font-weight: 500;
+      }
+    }
+    .btn {
+      padding: 0.3rem 0.8rem;
+      border: none;
+      outline: none;
+      background: white;
+      color: #083042;
+      border: 2px solid #083042;
+      font-size: 1rem;
+      font-weight: bold;
+      position: relative;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      &:hover {
+        background: #083042;
+        color: white;
+      }
+    }
   }
 `;

@@ -64,7 +64,7 @@ const dataProjects = () => {
         'Find optimize images and download from this site. I used Pexels API in this site.',
       cover: card5,
       isOrder: false,
-      address: 'https://behruz-todo.netlify.app',
+      address: 'https://bhotos.netlify.app',
       id: uuidv4(),
     },
     {

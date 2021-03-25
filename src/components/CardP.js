@@ -1,6 +1,9 @@
+//styled
+import { CardElement } from '../AllStyle';
+
 const CardP = ({ data }) => {
   return (
-    <div className='card-p'>
+    <CardElement>
       <img src={data.cover} alt={data.title} />
       <div className='descr'>
         <h3 className='title'>{data.title}</h3>
@@ -10,7 +13,7 @@ const CardP = ({ data }) => {
           <button className='btn'>View Project</button>
         </a>
       </div>
-    </div>
+    </CardElement>
   );
 };
 
