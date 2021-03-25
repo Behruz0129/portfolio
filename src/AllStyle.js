@@ -177,21 +177,22 @@ export const AboutSection = styled.div`
   }
 `;
 
+export const Header = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  color: #083042;
+  h2 {
+    font-size: 2rem;
+  }
+`;
+
 export const ProjectsSection = styled.div`
   min-height: 70vh;
   padding: 4rem;
   background: url(${dotGridBg});
   position: relative;
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
-    color: #083042;
-    h2 {
-      font-size: 2rem;
-    }
-  }
   .slider {
     min-height: 400px;
     padding: 10px 0;
@@ -208,7 +209,6 @@ export const ProjectsSection = styled.div`
 `;
 
 export const CardElement = styled.div`
-  min-height: 450px;
   width: 90%;
   border: 3px solid #083042;
   img {
@@ -220,15 +220,18 @@ export const CardElement = styled.div`
   .descr {
     padding: 1rem;
     background: #4aff9b;
-    min-height: 244px;
+    min-height: 250px;
     .title {
-      font-size: 2rem;
+      font-size: 1.8rem;
       color: #083042;
       margin-bottom: 10px;
     }
     p {
       color: #083042;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
       &:nth-child(3) {
         color: #024eff;
         font-weight: 500;
@@ -251,5 +254,16 @@ export const CardElement = styled.div`
         color: white;
       }
     }
+  }
+`;
+
+export const CoursesSection = styled.div`
+  min-height: 70vh;
+  padding: 4rem;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
   }
 `;
