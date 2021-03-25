@@ -36,6 +36,7 @@ const CoursesDescr = styled(Descr)`
     font-size: 1.5rem;
     color: #5c5c5c;
     margin-bottom: 50px;
+    line-height: 150%;
   }
   .btn {
     &:hover {

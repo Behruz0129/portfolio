@@ -229,13 +229,14 @@ export const CardElement = styled.div`
     p {
       color: #083042;
       margin-bottom: 40px;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      &:nth-child(3) {
+      min-height: 60px;
+      /* &:nth-child(3) {
         color: #024eff;
         font-weight: 500;
-      }
+        font-size: 1.5rem;
+        font-style: italic;
+        margin-bottom: 30px;
+      } */
     }
     .btn {
       padding: 0.3rem 0.8rem;
@@ -265,5 +266,49 @@ export const CoursesSection = styled.div`
     align-items: center;
     justify-content: space-between;
     width: 100%;
+  }
+`;
+
+export const FaqSection = styled.div`
+  background: #083042;
+  min-height: 70vh;
+  padding: 4rem;
+  color: #ccc;
+  .header {
+    color: white !important;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .questions {
+      width: 60%;
+      .question {
+        padding-bottom: 50px;
+        cursor: pointer;
+        h4 {
+          font-size: 1.8rem;
+          margin-bottom: 20px;
+        }
+        .answer {
+          display: none;
+          p {
+            margin-bottom: 10px;
+            line-height: 150%;
+          }
+        }
+        .question-line {
+          width: 100%;
+          height: 3px;
+          background: #ccc;
+        }
+      }
+    }
+  }
+  .image {
+    width: 40%;
+    img {
+      width: 80%;
+    }
   }
 `;
