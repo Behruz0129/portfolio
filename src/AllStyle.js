@@ -180,7 +180,7 @@ export const AboutSection = styled.div`
 export const Header = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   margin-bottom: 50px;
   color: #083042;
   h2 {
@@ -310,5 +310,68 @@ export const FaqSection = styled.div`
     img {
       width: 80%;
     }
+  }
+`;
+
+export const FooterApp = styled.div`
+  color: white;
+  div {
+    padding: 1rem 3rem;
+  }
+  .box1 {
+    background: #0f3d52;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .brand {
+      display: flex;
+      align-items: flex-end;
+      .logo {
+        font-size: 4rem;
+        padding-right: 30px;
+        margin: 0;
+        line-height: 80%;
+      }
+      p {
+        font-size: 1rem;
+        line-height: 150%;
+      }
+    }
+    .scl {
+      display: flex;
+      min-height: 100px;
+      align-items: center;
+      a {
+        margin-right: 30px;
+        cursor: pointer;
+        color: white;
+        transition: 0.5s ease all;
+        &:hover {
+          color: #00ff73;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  .box2 {
+    background: #16485f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .special {
+      a {
+        color: #4aff9b;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 1.2rem;
+        margin: 0 30px;
+      }
+    }
+  }
+  .box3 {
+    background: #1b556f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;

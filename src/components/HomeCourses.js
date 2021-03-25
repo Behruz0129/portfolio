@@ -18,7 +18,10 @@ const HomeCourses = () => {
             create JavaScript, React, Node js and other courses on youtube. So,{' '}
             <span>subscribe</span> my channel!
           </p>
-          <a href='https://www.youtube.com/channel/UCVVsrt9QYSfCXJmI303BgBw'>
+          <a
+            href='https://www.youtube.com/channel/UCVVsrt9QYSfCXJmI303BgBw'
+            target='_blank'
+          >
             <button className='btn'>Go To YouTube</button>
           </a>
         </CoursesDescr>
