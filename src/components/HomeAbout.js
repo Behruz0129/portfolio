@@ -2,6 +2,8 @@
 import { AboutSection } from '../AllStyle.js';
 //image
 import myImage from '../images/my-ph.jpg';
+//router
+import { Link } from 'react-router-dom';
 
 const HomeAbout = () => {
   return (
@@ -15,7 +17,9 @@ const HomeAbout = () => {
               <span>youtuber</span>. I can create small or big projects for you
               or your buisness
             </p>
-            <button className='btn'>Read More</button>
+            <Link to='/about'>
+              <button className='btn'>Read More</button>
+            </Link>
           </div>
           <div className='box'>
             <img src={myImage} alt='Behruz Berdiyev' />

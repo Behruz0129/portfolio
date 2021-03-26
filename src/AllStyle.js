@@ -186,6 +186,10 @@ export const Header = styled.div`
   h2 {
     font-size: 2rem;
   }
+  .link {
+    text-decoration: none;
+    color: #083042;
+  }
 `;
 
 export const ProjectsSection = styled.div`

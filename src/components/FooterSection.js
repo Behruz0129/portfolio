@@ -1,3 +1,5 @@
+//router
+import { Link } from 'react-router-dom';
 //styled
 import { FooterApp } from '../AllStyle';
 //fotawesome
@@ -42,8 +44,8 @@ const FooterSection = () => {
       </div>
       <div className='box2'>
         <div className='special'>
-          <a href='#'>Privasy Policy</a>
-          <a href='#'>Terms & Conditions</a>
+          <Link to='/privacy'>Privasy Policy</Link>
+          <Link to='/terms'>Terms & Conditions</Link>
         </div>
       </div>
       <div className='box3'>

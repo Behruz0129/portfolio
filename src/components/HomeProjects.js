@@ -5,6 +5,8 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 //style
 import { ProjectsSection, Header } from '../AllStyle.js';
+//router
+import { Link } from 'react-router-dom';
 
 const HomeProjects = ({ dataP }) => {
   let size = 7;
@@ -19,7 +21,9 @@ const HomeProjects = ({ dataP }) => {
     <ProjectsSection>
       <Header>
         <h2 className='title'>#Projects</h2>
-        <h3>more</h3>
+        <Link to='/projects' className='link'>
+          <h3>more</h3>
+        </Link>
       </Header>
       <Slider {...settings} className='slider'>
         {dataP.slice(0, size).map(data => (

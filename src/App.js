@@ -1,9 +1,11 @@
 //Import Pages
 import Nav from './components/Nav';
 import Home from './pages/Home';
-import Contact from './pages/Contact';
-import Projects from './pages/Projects';
 import About from './pages/About';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import Terms from './pages/Terms';
+import Privasy from './pages/Privasy';
 import FooterSection from './components/FooterSection';
 //Global Style
 import GlobalStyle from './components/GlobalStyle';
@@ -30,6 +32,12 @@ function App() {
         </Route>
         <Route path='/contact'>
           <Contact />
+        </Route>
+        <Route path='/privacy'>
+          <Privasy />
+        </Route>
+        <Route path='/terms'>
+          <Terms />
         </Route>
       </Switch>
       <FooterSection />
