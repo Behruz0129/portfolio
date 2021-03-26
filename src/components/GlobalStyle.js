@@ -9,6 +9,16 @@ const GlobalStyle = createGlobalStyle`
     body {
         font-family: 'Montserrat', sans-serif;
     }
+
+    *::-webkit-scrollbar {
+        width: 10px;
+    }
+    *::-webkit-scrollbar-thumb {
+        background: #19506b;
+    }
+    *::-webkit-scrollbar-track {
+        background: #092938;
+    }
 `;
 
 export default GlobalStyle;
