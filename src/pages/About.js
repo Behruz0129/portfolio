@@ -1,8 +1,12 @@
+import AboutMe from '../components/AboutMe';
+import AboutPSkill from '../components/AboutPSkill';
+
 const About = () => {
   return (
-    <div>
-      <h1>About</h1>
-    </div>
+    <>
+      <AboutMe />
+      <AboutPSkill />
+    </>
   );
 };
 
